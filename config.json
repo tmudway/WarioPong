@@ -1,0 +1,142 @@
+{
+    "name" : "Pong",
+    "docs" : "./docs/",
+    "global_variables" : {},
+    "node_types" : {
+        "Player Input" : {
+            "file" : "getInput.py",
+            "category" : "Input",
+            "attributes" : {
+                "WASD" : {
+                    "connection" : "output",
+                    "type" : "player"
+                },
+                "Arrows" : {
+                    "connection" : "output",
+                    "type" : "player"
+                }
+            },
+            "settings" : {}
+        },
+        "No Input" : {
+            "file" : "noInput.py",
+            "category" : "Input",
+            "attributes" : {
+                "Player" : {
+                    "connection" : "output",
+                    "type" : "player"
+                }
+            },
+            "settings" : {}
+        },
+        "Left Paddle" : {
+            "file" : "moveLeft.py",
+            "category" : "Object",
+            "attributes" : {
+                "Player" : {
+                    "connection" : "input",
+                    "type" : "player"
+                },
+                "Paddle Movement" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "Right Paddle" : {
+            "file" : "moveRight.py",
+            "category" : "Object",
+            "attributes" : {
+                "Player" : {
+                    "connection" : "input",
+                    "type" : "player"
+                },
+                "Paddle Movement" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "Ball" : {
+            "file" : "moveBall.py",
+            "category" : "Object",
+            "attributes" : {
+                "Player" : {
+                    "connection" : "input",
+                    "type" : "player"
+                },
+                "Ball Movement" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "Lock Movement" : {
+            "file" : "moveLocked.py",
+            "category" : "Modifier",
+            "attributes" : {
+                "Object" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                },
+                "Locked Object" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "Bounce" : {
+            "file" : "moveBounce.py",
+            "category" : "Modifier",
+            "attributes" : {
+                "Object" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                },
+                "Bounced Object" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "AI control" : {
+            "file" : "ai.py",
+            "category" : "Modifier",
+            "attributes" : {
+                "Object" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                },
+                "Moved Object" : {
+                    "connection" : "output",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        },
+        "Update Worldstate" : {
+            "file" : "updateWorld.py",
+            "category" : "Output",
+            "attributes" : {
+                "Left Paddle" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                },
+                "Right Paddle" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                },
+                "Ball" : {
+                    "connection" : "input",
+                    "type" : "movement"
+                }
+            },
+            "settings" : {}
+        }
+    }
+}

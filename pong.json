@@ -1,0 +1,251 @@
+{
+    "TOOLKITS": {
+        "default": "C:\\Users\\mudwayt\\Documents\\GitHub\\WARIO\\toolkits\\default",
+        "EEG": "C:\\Users\\mudwayt\\Documents\\GitHub\\EEG-Toolkit",
+        "Logic": "C:\\Users\\mudwayt\\Documents\\GitHub\\WARIO\\toolkits\\Logic",
+        "Pong": "C:\\Users\\mudwayt\\Documents\\GitHub\\Pong"
+    },
+    "NODES": {
+        "b502fff5bfa2492296e2a4e1768acf7d": {
+            "name": "Player Input",
+            "type": "Player Input",
+            "file": "getInput.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                4460.0,
+                4962.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "WASD",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                },
+                {
+                    "name": "Arrows",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "b88f9eeaf22a46ebaeab69473685df8d": {
+            "name": "Left Paddle",
+            "type": "Left Paddle",
+            "file": "moveLeft.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                4769.0,
+                4814.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Player",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                },
+                {
+                    "name": "Paddle Movement",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "5029430313e440b0b45b0ef7226e98d0": {
+            "name": "Right Paddle",
+            "type": "Right Paddle",
+            "file": "moveRight.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                4772.0,
+                5000.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Player",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                },
+                {
+                    "name": "Paddle Movement",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "9189c9729d56479996df0c2267a1564d": {
+            "name": "Ball",
+            "type": "Ball",
+            "file": "moveBall.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                4786.0,
+                5177.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Player",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                },
+                {
+                    "name": "Ball Movement",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "cad24f64a4224054a7caebdef8d0d4ba": {
+            "name": "Update Worldstate",
+            "type": "Update Worldstate",
+            "file": "updateWorld.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                5385.0,
+                4955.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Left Paddle",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                },
+                {
+                    "name": "Right Paddle",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                },
+                {
+                    "name": "Ball",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "b3795393153c4017b2457ff705a37153": {
+            "name": "No Input",
+            "type": "No Input",
+            "file": "noInput.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                4523.0,
+                5168.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Player",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "player"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        },
+        "f2dd4bc4dadd482dbe9476f8d7dd5be6": {
+            "name": "Bounce",
+            "type": "Bounce",
+            "file": "moveBounce.py",
+            "toolkit": "Pong",
+            "preset": "node_default",
+            "position": [
+                5105.0,
+                5166.0
+            ],
+            "alternate": true,
+            "attributes": [
+                {
+                    "name": "Object",
+                    "socket": true,
+                    "plug": false,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                },
+                {
+                    "name": "Bounced Object",
+                    "socket": false,
+                    "plug": true,
+                    "preset": "attr_preset_1",
+                    "dataType": "movement"
+                }
+            ],
+            "settings": {},
+            "variables": {}
+        }
+    },
+    "CONNECTIONS": [
+        [
+            "5029430313e440b0b45b0ef7226e98d0.Paddle Movement",
+            "cad24f64a4224054a7caebdef8d0d4ba.Right Paddle"
+        ],
+        [
+            "b88f9eeaf22a46ebaeab69473685df8d.Paddle Movement",
+            "cad24f64a4224054a7caebdef8d0d4ba.Left Paddle"
+        ],
+        [
+            "f2dd4bc4dadd482dbe9476f8d7dd5be6.Bounced Object",
+            "cad24f64a4224054a7caebdef8d0d4ba.Ball"
+        ],
+        [
+            "9189c9729d56479996df0c2267a1564d.Ball Movement",
+            "f2dd4bc4dadd482dbe9476f8d7dd5be6.Object"
+        ],
+        [
+            "b3795393153c4017b2457ff705a37153.Player",
+            "9189c9729d56479996df0c2267a1564d.Player"
+        ],
+        [
+            "b502fff5bfa2492296e2a4e1768acf7d.Arrows",
+            "5029430313e440b0b45b0ef7226e98d0.Player"
+        ],
+        [
+            "b502fff5bfa2492296e2a4e1768acf7d.WASD",
+            "b88f9eeaf22a46ebaeab69473685df8d.Player"
+        ]
+    ],
+    "GLOBALS": {}
+}
